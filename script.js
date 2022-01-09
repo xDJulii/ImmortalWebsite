@@ -10,13 +10,17 @@ function start() {
 
 }
 
+function playerlogin() {
+    window.location.href = "playerlogin.html"
+}
+
 function login2() {
     let username = document.getElementById('username').value;
     let enteredPassword = document.getElementById('password').value;
 
 
     if (username == 'root' && enteredPassword == 'Admin') {
-        window.location.href = 'logs.html'
+        window.location.href = 'login-success.html'
     }
 
 }
@@ -26,7 +30,7 @@ function login() {
     let username = document.getElementById('username').value;
     let enteredPassword = document.getElementById('password').value;
     if (username == "Staff" && enteredPassword == "#BeImmortal") {
-        window.location.href = 'login-success.html';
+        window.location.href = 'playerlogin-success.html';
     } else
         alert("Passwort falsch")
 }
