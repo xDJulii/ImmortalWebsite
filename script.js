@@ -19,7 +19,7 @@ function login2() {
     let enteredPassword = document.getElementById('password').value;
 
 
-    if (username == 'root' && enteredPassword == 'Admin') {
+    if (username == 'Player' && enteredPassword == '#grind') {
         window.location.href = 'login-success.html'
     }
 
